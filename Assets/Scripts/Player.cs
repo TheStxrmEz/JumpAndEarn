@@ -45,7 +45,6 @@ public class Player : MonoBehaviour
         float xAxis = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(speed*xAxis, rb.velocity.y);
         isRun = xAxis != 0;
-        print(xAxis);
         if (isRun)
         {
             sr.flipX = xAxis < 0;
